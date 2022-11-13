@@ -9,26 +9,26 @@ import java.util.Arrays;
 class Chapter05Test {
 
     @Test
-    void test_07_cast_num() {
+    void test_cast_num() {
         Chapter05 class_under_test = new Chapter05();
-        assertEquals(class_under_test.q07_cast_num("1"), 1);
-        assertEquals(class_under_test.q07_cast_num("183"), 183);
-        assertEquals(class_under_test.q07_cast_num("0"), 0);
-        assertEquals(class_under_test.q07_cast_num("-1"), -1);
-        assertEquals(class_under_test.q07_cast_num("-98941"), -98941);
+        assertEquals(class_under_test.cast_num("1"), 1);
+        assertEquals(class_under_test.cast_num("183"), 183);
+        assertEquals(class_under_test.cast_num("0"), 0);
+        assertEquals(class_under_test.cast_num("-1"), -1);
+        assertEquals(class_under_test.cast_num("-98941"), -98941);
     }
 
     @Test
-    void test_90_split_words() {
+    void test_split_words() {
         Chapter05 class_under_test = new Chapter05();
         assertEquals(
-            class_under_test.q90_split_words("1+1"),
+            class_under_test.split_words("1+1"),
             Arrays.asList("1", "+", "1"));
         assertEquals(
-            class_under_test.q90_split_words("18+110-8×10÷2"),
+            class_under_test.split_words("18+110-8×10÷2"),
             Arrays.asList("18", "+", "110", "-", "8", "×", "10", "÷", "2"));
         assertEquals(
-            class_under_test.q90_split_words("(1+12)*(55)÷11"),
+            class_under_test.split_words("(1+12)*(55)÷11"),
             Arrays.asList("(", "1", "+", "12", ")", "*", "(", "55", ")", "÷", "11"));
     }
 
@@ -67,29 +67,29 @@ class Chapter05Test {
     @Test
     void test_EX_calculator01() {
         Chapter05 class_under_test = new Chapter05();
-        assertEquals(class_under_test.qEX_calculator01("100-140+40"), 0);
-        assertEquals(class_under_test.qEX_calculator01("8+7-10"), 5);
+        assertEquals(class_under_test.calculator01("100-140+40"), 0);
+        assertEquals(class_under_test.calculator01("8+7-10"), 5);
     }
 
     @Test
-    void test_EX_calculator02() {
+    void test_calculator02() {
         Chapter05 class_under_test = new Chapter05();
-        assertEquals(class_under_test.qEX_calculator02("100-140+40"), 0);
-        assertEquals(class_under_test.qEX_calculator02("9+9×9-10"), 80);
-        assertEquals(class_under_test.qEX_calculator02("24÷3"), 8);
-        assertEquals(class_under_test.qEX_calculator02("8+7-10"), 5);
-        assertEquals(class_under_test.qEX_calculator02("7+12÷2×3"), 25);
+        assertEquals(class_under_test.calculator02("100-140+40"), 0);
+        assertEquals(class_under_test.calculator02("9+9×9-10"), 80);
+        assertEquals(class_under_test.calculator02("24÷3"), 8);
+        assertEquals(class_under_test.calculator02("8+7-10"), 5);
+        assertEquals(class_under_test.calculator02("7+12÷2×3"), 25);
     }
 
     @Test
-    void test_EX_calculator() {
+    void test_calculator() {
         Chapter05 class_under_test = new Chapter05();
-        assertEquals(class_under_test.qEX_calculator03("100-140+40"), 0);
-        assertEquals(class_under_test.qEX_calculator03("9+9×9-10"), 80);
-        assertEquals(class_under_test.qEX_calculator03("24÷3"), 8);
-        assertEquals(class_under_test.qEX_calculator03("15+(4-2)×3"), 21);
-        assertEquals(class_under_test.qEX_calculator03("8+7-10"), 5);
-        assertEquals(class_under_test.qEX_calculator03("7+12÷2×3"), 25);
+        assertEquals(class_under_test.calculator03("100-140+40"), 0);
+        assertEquals(class_under_test.calculator03("9+9×9-10"), 80);
+        assertEquals(class_under_test.calculator03("24÷3"), 8);
+        assertEquals(class_under_test.calculator03("15+(4-2)×3"), 21);
+        assertEquals(class_under_test.calculator03("8+7-10"), 5);
+        assertEquals(class_under_test.calculator03("7+12÷2×3"), 25);
     }
 
 }

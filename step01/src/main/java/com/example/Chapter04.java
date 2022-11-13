@@ -15,7 +15,7 @@ public final class Chapter04 {
     }
 
     /**
-     * step.05: if文を使って受け取った数値が
+     * if文を使って受け取ったプリミティブ型の整数値が
      * プラスの値なら "正"、
      * マイナスの値なら "負"、
      * 0 なら "ゼロ" と出力しよう。
@@ -24,18 +24,18 @@ public final class Chapter04 {
      *  出力: "負"
      * @param num 数値
      */
-    public void q05_print_if_sign(int num) {
+    public void print_if_sign(int num) {
 
     }
 
     /**
-     * step.06: step.05 を改良して元の条件に加えて 100 以上の値なら "正" の代わりに "100以上" と出力しよう。
+     * print_if_sign を改良して元の条件に加えて 100 以上の値なら "正" の代わりに "100以上" と出力しよう。
      * 例）
      *  入力: 100
      *  出力: "100以上"
      * @param num 数値
      */
-    public void q06_print_over100(int num) {
+    public void print_over100(int num) {
 
     }
 
@@ -44,7 +44,7 @@ public final class Chapter04 {
      * @param text1
      * @param text2
      */
-    public void equality_object(String text1, String text2) {
+    public void print_equality_object(String text1, String text2) {
 
     }
 
@@ -53,7 +53,7 @@ public final class Chapter04 {
      * @param text1
      * @param text2
      */
-    public void equivalent_object(String text1, String text2) {
+    public void print_equivalent_object(String text1, String text2) {
 
     }
 
